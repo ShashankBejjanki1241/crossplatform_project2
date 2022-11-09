@@ -7,10 +7,7 @@ SAI SWETHA DONTHINENI(D867G774)
 PRIYANKA SANKAR(V947Q842)
 SHASHANK BEJJANKI(S273T482)
 
-Github id:
-Sai Swetha Donthineni:114307137 https://github.com/saiswethadonthineni/calc/tree/master
-Priyanka Sankar :115057786
-Shashank:
+
 Saiswetha has done the API coding part and has pushe the code to below repository
 https://github.com/saiswethadonthineni/calc/tree/master
 and also done some local changes for the UI fixed the errors and pushed the files to the testsai branch created inside the local

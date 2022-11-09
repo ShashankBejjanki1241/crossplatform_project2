@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage x:Class="Calculator.MathQuiz"
+            xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" BackgroundColor="Black">
+    <FlexLayout Direction="Column"
+                    AlignItems="Center">
+
+        <Label Text="Maths Quiz" FontSize="60" TextColor="Brown" Margin="10"/>
+        <Label x:Name="questionText" Margin="10" 
+                   FontSize="64" FontAttributes="Bold" Text=""/>
+        <FlexLayout IsVisible="false" Direction="Row" AlignItems="Center" JustifyContent="SpaceAround" x:Name="OptionContainer" Margin="30">
+            <Button x:Name="OptionOne" HorizontalOptions="FillAndExpand"  VerticalOptions="CenterAndExpand" Text="" WidthRequest="150" Padding="30" BackgroundColor="CornflowerBlue" TextColor="White" Clicked="OptionSelected" />
+            <Button x:Name="OptionTwo" HorizontalOptions="FillAndExpand"  VerticalOptions="CenterAndExpand" Text="" WidthRequest="150" Padding="30" BackgroundColor="CornflowerBlue" TextColor="White" Clicked="OptionSelected" />
+            <Button x:Name="OptionThree" HorizontalOptions="FillAndExpand"  VerticalOptions="CenterAndExpand" Text="" WidthRequest="150" Padding="30" BackgroundColor="CornflowerBlue" TextColor="White" Clicked="OptionSelected" />
+        </FlexLayout>
+        <Label Text="" x:Name="QuestionStatus" FontSize="40" FontAttributes="Bold" Margin="30"></Label>
+        <Button x:Name="StartButton" HorizontalOptions="FillAndExpand" Margin="2"  VerticalOptions="CenterAndExpand" Text="Start Quiz" Padding="8" CornerRadius="10" BackgroundColor="ForestGreen" TextColor="White" Clicked="OnStart" />
+        <Button x:Name="NextButton" HorizontalOptions="FillAndExpand" Margin="10" VerticalOptions="CenterAndExpand" IsVisible="false" Text="Next Question" Padding="8" CornerRadius="10" BackgroundColor="CornflowerBlue" TextColor="White" Clicked="OnNext" />
+        <Button x:Name="SubmitButton" HorizontalOptions="FillAndExpand" Margin="2" VerticalOptions="CenterAndExpand" IsVisible="false" Text="Submit" Padding="8" CornerRadius="10" BackgroundColor="ForestGreen" TextColor="White" Clicked="OnSubmit" />
+        <Button x:Name="StartAgain" HorizontalOptions="FillAndExpand" Margin="2" VerticalOptions="CenterAndExpand" IsVisible="false" Text="Start Again" Padding="8" CornerRadius="10" BackgroundColor="ForestGreen" TextColor="White" Clicked="OnStartAgain" />
+        <Button x:Name="SkipButton" HorizontalOptions="FillAndExpand" Margin="2" VerticalOptions="CenterAndExpand" IsVisible="false" Text="Skip &amp; Continue" Padding="8" CornerRadius="10" BackgroundColor="CornflowerBlue" TextColor="White" Clicked="OnNext" />
+        <Button x:Name="RetryButton" HorizontalOptions="FillAndExpand" Margin="2" VerticalOptions="CenterAndExpand" IsVisible="false" Text="Retry" Padding="8" CornerRadius="10" BackgroundColor="CornflowerBlue" TextColor="White" Clicked="OnRetry" />
+    </FlexLayout>
+</ContentPage>
